@@ -8,10 +8,15 @@ The user can turn on/off electrical loads and even control the power rate of it 
 https://www.youtube.com/watch?v=UvIMFM22924
 
 In this test we are:
-
 1 - Turning the load on with 60% power rate.
 2 - Turning the load on with 100% power rate.
 3 - Turning the load off.
 4 - Activating the alarm.
 5 - Desactivating the alarm.
-6 - Observing in my Twitter acount the alert messages about the dectation while the alarm was activated.
+6 - Observing in my Twitter acount the alert messages received about the detection, while the alarm was activated.
+
+# Content:
+
+Two programs were developed. The first one is a hands-on approach in Python, which utilize Tweepy (http://www.tweepy.org), to access the Twitter API. The python script access the Twitter account of the House and keeps tracking tweets sent for it. If the tweet message contains specific commands (like activate the alarm) and it is from an authorized user (User's Twitter acount), the script sends this command through the computer's serial port to an Arduino, that makes the interface with the electrical equipaments. The script is also listening to the serial port, to be aware of any detections from the alarm and to be able to send a Tweet to the User's personal account if it happens.
+
+The second program is just a Arduino code that connects the Arduino to the computer's serial port, interprets the commands received from the python scripts and deliver it to the electrical equipaments.
