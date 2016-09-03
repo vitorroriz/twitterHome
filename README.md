@@ -19,4 +19,4 @@ In this test we are:
 
 Two programs were developed. The first one is a hands-on approach in Python, which utilize Tweepy (http://www.tweepy.org), to access the Twitter API. The python script access the Twitter account of the House and tracks tweets sent to it. If the tweet message contains specific commands (like activate the alarm) and it is from an authorized user (User's Twitter acount), the script sends this command through the computer's serial port to an Arduino, that makes the interface with the electrical equipaments. The script is also listening to the computer's serial port, to be aware of any detections from the alarm and to be able to send a Tweet to the User's personal account if it happens.
 
-The second program is just an Arduino code that connects the Arduino to the computer's serial port, interprets the commands received from the python scripts and deliver it to the electrical equipaments.
+The second program is just an Arduino code that connects the Arduino to the computer's serial port, interprets the commands received from the python script and delivers it to the electrical equipaments.
