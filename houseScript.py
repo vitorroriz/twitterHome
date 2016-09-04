@@ -13,7 +13,7 @@ from tweepy.utils import import_simplejson
 # -------- Chaves obtidas no site (omitidas aqui por questões de segurança)
 CONSUMER_KEY = '****************************' 
 CONSUMER_SECRET = '*****************************'
-ACCESS_KEY = ******************************'
+ACCESS_KEY = '******************************'
 ACCESS_SECRET = '*********************************
 potencia=''
 
